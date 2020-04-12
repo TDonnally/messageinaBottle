@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+        <title>Message in a Bottle</title>
+        <link href="https://fonts.googleapis.com/css?family=Nova+Mono&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="styles.css">
+    </head>
+    <body>
+    <div id = "overlay">   
+        <div id = "icon">
+            <img id = "iconImg" style = "width:100%"src = "Icon.svg"/>
+            <div  id = "loadingMessage">
+                <p>Finding response</p>
+            </div>
+        </div>
+        <div id = "form">
+            <form method="post" action="/">
+                <p>name:</p>
+                <input class = "field" type="text" name="sender"/>
+                <p>message:</p>
+                <textarea class = "field" rows="20" cols="50" name="message"></textarea>
+                <br>
+                <button style = "background: #F29C1F;" type = "submit">submit</button>
+            </form>
+        </div>
+        <div id = "message">
+            <p>From:</p>
+            <p id = "senderName"></p>
+            <p>Message:</p>
+            <p id = "response"></p>
+            <button onclick="closeMessage()">New Message</button>
+        </div>
+    </div> 
+    </body>
+    <script type = "text/javascript" src = "packageHandler.js"></script>
+    
+</html>
